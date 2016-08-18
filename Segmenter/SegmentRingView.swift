@@ -14,12 +14,13 @@ class SegmentRingView : UIView {
             self.setNeedsDisplay()
         }
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         setNeedsDisplay()
     }
-    override func draw(_ rect: CGRect)
-    {
+    
+    override func draw(_ rect: CGRect) {
         print(frame.width, frame.height)
         let radius : CGFloat = min(frame.width/2, frame.height/2)
         let centerX : CGFloat = frame.width/2
