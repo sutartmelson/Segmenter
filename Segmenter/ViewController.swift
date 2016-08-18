@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var outsideLengthLabel: UILabel!
     @IBOutlet weak var outsideLengthSlider: UISlider!
     @IBOutlet weak var diameterLabel: UILabel!
+    @IBOutlet weak var segmentRingView: SegmentRingView!
     
     var outsideCutLength : Float = 0.0
     
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
         setCutAngleLabel()
         setOutsideLengthLabel()
         setDiameterLabel()
+        let trunc : Int = Int(segmentCountSlider.value)
+        segmentRingView.sides = trunc
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +47,8 @@ class ViewController: UIViewController {
         setCutAngleLabel()
         setOutsideLengthLabel()
         setDiameterLabel()
+        
+        segmentRingView.sides = trunc
     }
     
     @IBAction func outsideLengthSliderAction(_ sender: UISlider) {
