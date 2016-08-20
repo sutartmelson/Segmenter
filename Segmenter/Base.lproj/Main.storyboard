@@ -133,7 +133,7 @@
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GraphPaperViewController" customModule="Segmenter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NIk-MG-3UT"/>
                         <viewControllerLayoutGuide type="bottom" id="czj-uE-KxD"/>
@@ -141,12 +141,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-GA-QLR" customClass="GraphPaperView" customModule="Segmenter" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7EW-GA-QLR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0Be-sJ-fdq"/>
+                            <constraint firstItem="7EW-GA-QLR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Cyv-O3-rMj"/>
+                            <constraint firstItem="7EW-GA-QLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LHz-nz-yqn"/>
+                            <constraint firstItem="7EW-GA-QLR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MnK-3G-KaK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="79B-2H-sGl"/>
                     <connections>
                         <outlet property="cutAngleLabel" destination="HFj-No-mM8" id="hUW-ka-j9K"/>
                         <outlet property="diameterLabel" destination="Agz-ti-Nlv" id="Ihz-uo-Yy0"/>
+                        <outlet property="graphPaperView" destination="7EW-GA-QLR" id="mD2-BI-ngA"/>
                         <outlet property="outsideLengthLabel" destination="LqR-T6-V1U" id="wif-wl-1ek"/>
                         <outlet property="outsideLengthSlider" destination="OJb-wG-sne" id="BIH-wy-wuv"/>
                         <outlet property="segmentCountLabel" destination="Sik-hs-lvx" id="Dx2-M4-dEk"/>
@@ -155,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358" y="-232"/>
+            <point key="canvasLocation" x="-358.5" y="-232.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
