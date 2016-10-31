@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="PFG-QA-c5F">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="eki-K9-NOi">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -48,7 +48,6 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sementCountSliderAction:" destination="eki-K9-NOi" eventType="valueChanged" id="IpV-Hj-kUl"/>
-                                                    <action selector="sementCountSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rup-Uo-Ewr"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.25" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-wG-sne">
@@ -56,7 +55,6 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="outsideLengthSliderAction:" destination="eki-K9-NOi" eventType="valueChanged" id="LKA-Ka-BGC"/>
-                                                    <action selector="outsideLengthSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uz2-55-QpI"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diameter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agz-ti-Nlv">
@@ -111,63 +109,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNi-tm-Jdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-359.5" y="1185"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="fp5-IU-Toz">
-            <objects>
-                <tabBarController id="PFG-QA-c5F" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="eAK-fG-snM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="eki-K9-NOi" kind="relationship" relationship="viewControllers" id="p2t-0o-zPE"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hTz-fi-dMO"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s00-dI-TDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-952" y="147"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="GraphPaperViewController" customModule="Segmenter" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NIk-MG-3UT"/>
-                        <viewControllerLayoutGuide type="bottom" id="czj-uE-KxD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-GA-QLR" customClass="GraphPaperView" customModule="Segmenter" customModuleProvider="target">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="7EW-GA-QLR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0Be-sJ-fdq"/>
-                            <constraint firstItem="7EW-GA-QLR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Cyv-O3-rMj"/>
-                            <constraint firstItem="7EW-GA-QLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LHz-nz-yqn"/>
-                            <constraint firstItem="7EW-GA-QLR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MnK-3G-KaK"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="79B-2H-sGl"/>
-                    <connections>
-                        <outlet property="cutAngleLabel" destination="HFj-No-mM8" id="hUW-ka-j9K"/>
-                        <outlet property="diameterLabel" destination="Agz-ti-Nlv" id="Ihz-uo-Yy0"/>
-                        <outlet property="graphPaperView" destination="7EW-GA-QLR" id="mD2-BI-ngA"/>
-                        <outlet property="outsideLengthLabel" destination="LqR-T6-V1U" id="wif-wl-1ek"/>
-                        <outlet property="outsideLengthSlider" destination="OJb-wG-sne" id="BIH-wy-wuv"/>
-                        <outlet property="segmentCountLabel" destination="Sik-hs-lvx" id="Dx2-M4-dEk"/>
-                        <outlet property="segmentCountSlider" destination="Uq0-p9-NoJ" id="1sI-5U-K4X"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-358.5" y="-232.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

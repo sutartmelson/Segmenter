@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let val : Float = nextMult(outsideLengthSlider.value, Measurement.sixteenth.rawValue)
+        let val : Float = nextMult(outsideLengthSlider.value, Measurement.thirtysecond.rawValue)
         outsideCutLength = val
         
         setSegmentLabel(getCurrentSegmentCount())
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func outsideLengthSliderAction(_ sender: UISlider) {
-        let val : Float = nextMult(sender.value, Measurement.sixteenth.rawValue)
+        let val : Float = nextMult(sender.value, Measurement.thirtysecond.rawValue)
         outsideCutLength = val
         setOutsideLengthLabel()
         setDiameterLabel()
@@ -71,18 +71,28 @@ class ViewController: UIViewController {
         cutAngleLabel.text = cutString
     }
     func setOutsideLengthLabel() {
-        let lengthString : String = "Outside Segment Length: \(outsideCutLength)"
+        let lengthString : String = "Outside Segment Length: \(imperialString(outsideCutLength))"
         outsideLengthLabel.text = lengthString
     }
     func setDiameterLabel() {
         var diameter : Float = (Float(Int(segmentCountSlider.value)) * outsideCutLength) / Float(M_PI)
-        diameter = nextMult(diameter, Measurement.sixteenth.rawValue)
-        let diameterString : String = "Diameter: \(diameter)"
+        diameter = nextMult(diameter, Measurement.thirtysecond.rawValue)
+        let diameterString : String = "Diameter: \(imperialString(diameter))"
         diameterLabel.text = diameterString
     }
     
     func nextMult(_ num : Float, _ res : Float) -> Float {
         return ceilf(num/res) * res
+    }
+    func imperialString(_ num : Float) -> String{
+        let split = modf(num)
+        let inch = Int(split.0)
+        var frac : String = ImperialMeasurements.strings[split.1]!
+        if(frac == "0")
+        {
+            frac = ""
+        }
+        return String(inch) + "\" " + frac
     }
 }
 

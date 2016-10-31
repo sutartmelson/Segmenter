@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8345534B1D663E2D00CE04AF /* GraphCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345534A1D663E2D00CE04AF /* GraphCellView.swift */; };
+		832AF1541DC7C227005A6CDC /* BuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AF1531DC7C227005A6CDC /* BuilderView.swift */; };
 		83EE3E511D65156D000A00C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE3E501D65156D000A00C7 /* AppDelegate.swift */; };
 		83EE3E531D65156D000A00C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE3E521D65156D000A00C7 /* ViewController.swift */; };
 		83EE3E561D65156D000A00C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE3E541D65156D000A00C7 /* Main.storyboard */; };
@@ -15,12 +15,10 @@
 		83EE3E5B1D65156D000A00C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE3E591D65156D000A00C7 /* LaunchScreen.storyboard */; };
 		83EE3E631D65283B000A00C7 /* imperial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE3E621D65283B000A00C7 /* imperial.swift */; };
 		83EE3E651D65621D000A00C7 /* SegmentRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE3E641D65621D000A00C7 /* SegmentRingView.swift */; };
-		83EE3E671D6623AC000A00C7 /* GraphPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE3E661D6623AC000A00C7 /* GraphPaperViewController.swift */; };
-		83EE3E691D6624EF000A00C7 /* GraphPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE3E681D6624EF000A00C7 /* GraphPaperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8345534A1D663E2D00CE04AF /* GraphCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCellView.swift; sourceTree = "<group>"; };
+		832AF1531DC7C227005A6CDC /* BuilderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderView.swift; sourceTree = "<group>"; };
 		83EE3E4D1D65156D000A00C7 /* Segmenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Segmenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE3E501D65156D000A00C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EE3E521D65156D000A00C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +28,6 @@
 		83EE3E5C1D65156D000A00C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83EE3E621D65283B000A00C7 /* imperial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imperial.swift; sourceTree = "<group>"; };
 		83EE3E641D65621D000A00C7 /* SegmentRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentRingView.swift; sourceTree = "<group>"; };
-		83EE3E661D6623AC000A00C7 /* GraphPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphPaperViewController.swift; sourceTree = "<group>"; };
-		83EE3E681D6624EF000A00C7 /* GraphPaperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphPaperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +68,7 @@
 				83EE3E5C1D65156D000A00C7 /* Info.plist */,
 				83EE3E621D65283B000A00C7 /* imperial.swift */,
 				83EE3E641D65621D000A00C7 /* SegmentRingView.swift */,
-				83EE3E661D6623AC000A00C7 /* GraphPaperViewController.swift */,
-				83EE3E681D6624EF000A00C7 /* GraphPaperView.swift */,
-				8345534A1D663E2D00CE04AF /* GraphCellView.swift */,
+				832AF1531DC7C227005A6CDC /* BuilderView.swift */,
 			);
 			path = Segmenter;
 			sourceTree = "<group>";
@@ -152,12 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EE3E671D6623AC000A00C7 /* GraphPaperViewController.swift in Sources */,
 				83EE3E631D65283B000A00C7 /* imperial.swift in Sources */,
 				83EE3E531D65156D000A00C7 /* ViewController.swift in Sources */,
+				832AF1541DC7C227005A6CDC /* BuilderView.swift in Sources */,
 				83EE3E651D65621D000A00C7 /* SegmentRingView.swift in Sources */,
-				8345534B1D663E2D00CE04AF /* GraphCellView.swift in Sources */,
-				83EE3E691D6624EF000A00C7 /* GraphPaperView.swift in Sources */,
 				83EE3E511D65156D000A00C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
