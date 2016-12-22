@@ -1,7 +1,7 @@
 Segmenter
 =========
 
-A simple tool for woodturners. 
+A dimension calculating tool for woodturners. 
 
 Segmenter helps calculate information needed for building a segmented vessel such as a bowl, vase, or platter. 
 
